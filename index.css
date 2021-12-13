@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  padding: 36px 64px;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+html::before {
+  content: " ";
+  display: block;
+  height: 12px;
+  background: linear-gradient(
+    90deg,
+    hsl(240, 50%, 50%) 0%,
+    hsl(0, 50%, 50%) 100%
+  );
+}
+
+header {
+  margin-bottom: 64px;
+  text-align: center;
+}
+header > p {
+  margin-top: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 64px;
+  margin-left: -5px;
+}
+
+main {
+}
+
+img {
+  float: left;
+  width: 200px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  margin-top: 6px;
+  box-shadow: 2px 2px 2px hsl(0, 0%, 50%);
+  border-radius: 2px;
+  animation: shake 3s;
+}
+
+main > p {
+  max-width: 650px;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+@keyframes shake {
+  from: {
+    transform: translateY(0);
+  }
+  10%: {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-10px);
+  }
+  47% {
+    transform: translateY(-10px) rotateZ(-2deg);
+  }
+  49% {
+    transform: translateY(-10px) rotateZ(2deg);
+  }
+  51% {
+    transform: translateY(-10px) rotateZ(-2deg);
+  }
+  53% {
+    transform: translateY(-10px) rotateZ(2deg);
+  }
+  56% {
+    transform: translateY(-10px) rotateZ(-2deg);
+  }
+  59% {
+    transform: translateY(-10px) rotateZ(2deg);
+  }
+  61% {
+    transform: translateY(-10px);
+  }
+  to: {
+    transform: translateY(0);
+  }
+}
