@@ -40,6 +40,10 @@ h1 {
   margin-left: -5px;
 }
 
+h2 {
+  text-align: center;
+}
+
 #profile-picture {
   float: left;
   width: 200px;
@@ -55,10 +59,12 @@ img {
 }
 
 p {
+  margin-bottom: 36px;
   max-width: 650px;
+}
+p, li {
   line-height: 1.5;
   font-size: 20px;
-  margin-bottom: 36px;
 }
 
 .lesson-step {
@@ -125,4 +131,10 @@ p {
   padding: 36px 0;
   border-top: 1px solid hsl(0, 0%, 70%);
   border-bottom: 1px solid hsl(0, 0%, 70%);
+}
+
+.thumbnail {
+  width: 250px;
+  border: 0.5px solid hsl(240, 50%, 50%);
+  box-shadow: none;
 }
