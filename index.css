@@ -7,7 +7,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  color: hsl(0, 0%, 20%);
 }
+
 html::before {
   content: " ";
   display: block;
@@ -38,25 +40,48 @@ h1 {
   margin-left: -5px;
 }
 
-main {
-}
-
-img {
+#profile-picture {
   float: left;
   width: 200px;
   margin-right: 24px;
   margin-bottom: 24px;
   margin-top: 6px;
-  box-shadow: 2px 2px 2px hsl(0, 0%, 50%);
-  border-radius: 2px;
   animation: shake 3s;
 }
 
-main > p {
+img {
+  box-shadow: 2px 2px 2px hsl(0, 0%, 50%);
+  border-radius: 2px;
+}
+
+p {
   max-width: 650px;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 36px;
+}
+
+.lesson-step {
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.lesson-steps li:nth-child(even) .lesson-step {
+  flex-flow: row-reverse nowrap;
+}
+
+.lesson-steps li:nth-child(odd) .lesson-step {
+  flex-flow: row nowrap;
+}
+
+.lesson-steps {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-step img {
+  width: 300px;
+  margin: 0 36px;
 }
 
 @keyframes shake {
@@ -93,4 +118,11 @@ main > p {
   to: {
     transform: translateY(0);
   }
+}
+
+.introduction, .review {
+  margin: 64px auto;
+  padding: 36px 0;
+  border-top: 1px solid hsl(0, 0%, 70%);
+  border-bottom: 1px solid hsl(0, 0%, 70%);
 }
